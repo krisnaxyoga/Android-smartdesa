@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.smartdesa.demo.fragment.KontakFragment"
+    android:background="@drawable/background_primary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Kontak Kepala Dusun"
+                android:textSize="19dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="240dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/person"
+                android:id="@+id/profiluser" />
+
+        </RelativeLayout>
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_putih_bawah_datar">
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/berita_seni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="KEPALA DUSUN"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardview_menu" />
+
+                <TextView
+                    android:id="@+id/tv_dusun"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_marginBottom="10dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardview_menu" />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ln_kadus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profilphoto"
+                                android:src="@drawable/person"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:text="Nama Lengkap"
+                                android:fontFamily="@font/nunito_bold"/>
+
+                            <TextView
+                                android:id="@+id/tv_kadus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="xxx"
+                                android:fontFamily="@font/nunito_regular"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:text="Alamat"
+                                android:fontFamily="@font/nunito_bold"/>
+
+                            <TextView
+                                android:id="@+id/nomor"
+                                android:layout_width="1dp"
+                                android:layout_height="1dp"
+                                android:visibility="invisible"
+                                android:fontFamily="@font/nunito_bold"/>
+
+                            <TextView
+                                android:id="@+id/tv_alamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="xxx"
+                                android:fontFamily="@font/nunito_regular"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/btn_telp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Telpon"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:background="@drawable/roundblue"
+                                android:layout_marginRight="5dp"/>
+
+                            <Button
+                                android:id="@+id/btn_wa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="WhatsApp"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="@drawable/roundgreentua"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

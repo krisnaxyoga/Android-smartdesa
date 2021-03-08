@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_primary"
+    tools:context="com.smartdesa.demo.homepage.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="190dp"
+            android:layout_height="170dp"
+            android:src="@drawable/logodesa"/>
+        <TextView
+            android:id="@+id/logofont"
+            android:layout_below="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Desa"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="28dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:gravity="center" />
+        <TextView
+            android:layout_below="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Demo"
+            android:textSize="28dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="#fff"
+            android:gravity="center" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/gambar"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            app:lottie_fileName="newloading.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Powered By GLS"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="bottom|end"
+            android:fontFamily="@font/lato_light"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

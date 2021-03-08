@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartdesa.demo.updatefoto.FotoProfil"
+    android:background="@drawable/background_primary">
+
+    <RelativeLayout
+    android:padding="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtdashboard"
+        android:text="Ganti Foto Profil"
+        android:textSize="24dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:padding="30dp"
+                android:layout_weight="1"
+                android:layout_marginTop="110dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_putih_bawah_datar">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/gallery"
+                            android:id="@+id/selfie"
+                            android:layout_gravity="center"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"/>
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:id="@+id/btn_kamera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundblue"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:text="Buka Kamera"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:layout_above="@+id/bottom"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp">
+
+                            <TextView
+                                android:id="@+id/btn_simpan"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginRight="70dp"
+                                android:textSize="16dp"
+                                android:background="@drawable/roundlogin"
+                                android:text="Simpan Perubahan"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:layout_above="@+id/bottom"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

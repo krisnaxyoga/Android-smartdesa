@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_primary"
+    tools:context=".register.RegisterValidation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logodesa" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="REGISTRASI PENDUDUK"
+
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Silahkan Memasukkan No.KK dan NIK Kepala Keluarga yang sudah terdaftar."
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <!--        <ScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            >-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Kartu Keluarga"
+                android:textSize="16dp"></TextView>
+
+            <EditText
+                android:id="@+id/et_kk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukkan No.KK"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIK Kepala Keluarga"
+                android:textSize="16dp"></TextView>
+
+            <EditText
+                android:id="@+id/et_nik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukkan NIK Kepala Keluarga"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/tv_bulan"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/bulanlahir"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btn_kirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/roundlogin"
+                android:text="KIRIM"
+                android:textStyle="bold"
+                android:textColor="#FFFF" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

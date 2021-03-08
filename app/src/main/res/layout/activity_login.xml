@@ -1,44 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    android:orientation="vertical"
+    android:background="@drawable/background_primary"
+    tools:context="com.smartdesa.demo.login.LoginActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-
         <ImageView
+            android:layout_marginTop="20dp"
             android:layout_width="100dp"
-            android:layout_height="120dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/gumbrihlogo" />
+            android:src="@drawable/logodesa" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/amiko_semibold"
-            android:text="SELAMAT DATANG"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="LOGIN PENDUDUK"
             android:textAlignment="center"
-            android:textColor="#1B1B1B"
+            android:textColor="#ffff"
             android:textSize="20dp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Silahkan Masukan NIK dan Tanggal Lahir Sesuai yang Tertera Pada KTP"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Silahkan Memasukkan NIK dan Tanggal Lahir Sesuai yang Tertera Pada KTP"
             android:textAlignment="center"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:paddingLeft="20dp"
-            android:background="@drawable/bgfoam"/>
-
 
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
 
-</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <!--        <ScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            >-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/et_nik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukkan NIK"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                android:textSize="16dp"></TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_tanggal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:hint="Tanggal"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+
+                <Spinner
+                    android:id="@+id/sp_bulan"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_tahun"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:hint="Tahun"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/tv_bulan"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/bulanlahir"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btn_masuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/roundlogin"
+                android:text="masuk"
+                android:textStyle="bold"
+                android:textColor="#FFFF" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_regis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/roundbirukombinasi"
+                android:text="REGISTRASI"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

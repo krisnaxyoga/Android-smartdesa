@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cetak"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icn_send"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:gravity="center|left">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center|left"
+                        android:textSize="16dp"
+                        android:visibility="gone"
+                        android:text="xxx"
+                        android:textStyle="bold"
+                        android:textColor="#335d2d" />
+
+                    <TextView
+                        android:id="@+id/track"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center|left"
+                        android:textSize="16dp"
+                        android:visibility="gone"
+                        android:text="xxx"
+                        android:textStyle="bold"
+                        android:textColor="#335d2d" />
+
+                    <TextView
+                        android:id="@+id/nama_pemohon"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center|left"
+                        android:textSize="16dp"
+                        android:visibility="gone"
+                        android:text="xxx"
+                        android:textStyle="bold"
+                        android:textColor="#335d2d" />
+
+                    <TextView
+                        android:id="@+id/keperluan"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center|left"
+                        android:textSize="16dp"
+                        android:visibility="gone"
+                        android:text="xxx"
+                        android:textStyle="bold"
+                        android:textColor="#335d2d" />
+
+                    <TextView
+                        android:id="@+id/no_surat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center|left"
+                        android:textSize="16dp"
+                        android:text="xxx"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:textColor="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/jenis_acara"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center|left"
+                            android:text="xxx"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:gravity="center|left"
+                            android:text="Tanggal:"
+                            android:textStyle="italic"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/tanggal_cetak"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center|left"
+                            android:text="xxx"
+                            android:textStyle="italic"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:lineSpacingExtra="7sp"
+                        android:text="Baca Selengkapnya"
+                        android:textColor="#7165e3"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

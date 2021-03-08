@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/kontakFragment">
+
+    <fragment
+        android:id="@+id/kontakFragment"
+        android:name="com.smartdesa.demo.fragment.KontakFragment"
+        android:label="fragment_kontak"
+        tools:layout="@layout/fragment_kontak" />
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="com.smartdesa.demo.fragment.BerandaFragment"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" />
+    <fragment
+        android:id="@+id/riwayatFragment"
+        android:name="com.smartdesa.demo.fragment.RiwayatFragment"
+        android:label="fragment_riwayat"
+        tools:layout="@layout/fragment_riwayat" />
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.smartdesa.demo.fragment.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+</navigation>

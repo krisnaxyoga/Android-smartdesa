@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_primary"
+    tools:context=".pengaduan.DetailReplyPengaduan">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtdashboard"
+            android:text="Detail"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="21dp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtdashboard2"
+            android:layout_below="@+id/txtdashboard"
+            android:text="Reply Pengaduan"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_putih_bawah_datar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Cara Login"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="left"
+                        android:fontFamily="@font/lato_light"/>
+
+                    <TextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ganti Foto Profil"
+                        android:textSize="18dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="right"
+                        android:fontFamily="@font/lato_light"/>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/qrcode"
+                            android:id="@+id/selfie"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="70dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/track"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:text="xxx"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:gravity="center"
+                                android:textColor="#000"/>
+
+                        </LinearLayout>
+
+                        <GridLayout
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:alignmentMode="alignMargins"
+                            android:columnCount="1"
+                            android:columnOrderPreserved="false"
+                            android:rowCount="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_credit_card"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Nomor Surat Pengantar Kadus"
+                                        android:textColor="#767c77"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_surat_pengantar"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="-"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_history_black"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Waktu Pengajuan"
+                                        android:textColor="#767c77"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_tanggal_pengajuan"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="xxx"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_person"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Nama Pemohon"
+                                        android:textColor="#767c77"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_nama_pemohon"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="xxx"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_baseline_markunread_mailbox_24"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Jenis Surat"
+                                        android:textColor="#767c77" />
+
+                                    <TextView
+                                        android:id="@+id/tv_jenis_surat"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="xxx"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_baseline_people_24"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Keperluan"
+                                        android:textColor="#767c77"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_keperluan"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="xxx"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+  </FrameLayout>

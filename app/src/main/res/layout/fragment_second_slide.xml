@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartdesa.demo.tutorial.SecondSlide"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient_white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tutorberanda">
+    </com.github.chrisbanes.photoview.PhotoView>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fitur Beranda Aplikasi"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/dmsans_bold"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deskripsi"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_light"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="1. Untuk Masuk ke Halaman Notifikasi Surat yang telah dicetak." />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="2. Untuk Masuk ke Halaman Panduan Penggunaan aplikasi bagi Penduduk" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="3. Untuk Masuk ke Halaman Mekanisme Pengajuan Surat Permohonan dan Mekanisme Pengaduan Masyarakat." />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="4. Untuk Keluar Akun" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="5. Untuk Masuk ke Halaman Berita Desa"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="6. Untuk Masuk ke Halaman List Surat Permohonan" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="7. Untuk Masuk ke Halaman Arsip Surat Permohonan"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="8. Untuk Masuk ke Halaman List Pengaduan Masyarakat" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="9. Untuk Masuk ke Halaman Arsip Pengaduan Masyarakat" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="10. Untuk Masuk ke Halaman Live CCTV Desa" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="11. Untuk Masuk ke Halaman Arsip Pengumuman Desa" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="12. Untuk Melihat Menu lain pada Aplikasi Smart Desa" />
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cara Login"
+            android:textSize="18dp"
+            android:textColor="@color/birumuda"
+            android:gravity="left"
+            android:layout_gravity="bottom|end"
+            android:fontFamily="@font/dmsans_bold"/>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ganti Foto Profil"
+            android:textSize="18dp"
+            android:textColor="@color/birumuda"
+            android:gravity="right"
+            android:layout_gravity="bottom|end"
+            android:fontFamily="@font/dmsans_bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

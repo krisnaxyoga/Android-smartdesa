@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".dialog.LainnyaDialog">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginBottom="10dp"
+            android:text="MENU LAINNYA"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview_menu" />
+
+        <GridLayout
+            android:columnCount="3"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tempat"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/tp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_alignParentRight="true">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="50dp"
+                        app:lottie_fileName="yellow1.json"
+                        app:lottie_autoPlay="true"
+                        android:layout_gravity="top"
+                        app:lottie_loop="true"
+                        android:layout_height="35dp"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hiburan"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/icn_youtube"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_alignParentRight="true">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="50dp"
+                        app:lottie_fileName="yellow1.json"
+                        app:lottie_autoPlay="true"
+                        android:layout_gravity="top"
+                        app:lottie_loop="true"
+                        android:layout_height="35dp"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ppob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/icn_payment"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_alignParentRight="true">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="50dp"
+                        app:lottie_fileName="yellow1.json"
+                        app:lottie_autoPlay="true"
+                        android:layout_gravity="top"
+                        app:lottie_loop="true"
+                        android:layout_height="35dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:text="Toko"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:text="Masyarakat"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:text="Video"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:text="Desa"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:text="PPOB"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:text="BUMDes"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,3 +1,72 @@
 <resources>
-    <string name="app_name">Desa GLS</string>
+    <string name="app_name">Smart Desa Demo</string>
+
+    <string name="lorem_ipsun">Lorem Ipsum hanyalah teks tiruan dari industri percetakan dan penyusunan huruf. Lorem Ipsum telah menjadi teks tiruan standar industri sejak tahun 1500-an, ketika printer yang tidak dikenal menggunakan galai jenis dan mengacaknya untuk membuat buku jenis spesimen. Ini telah bertahan tidak hanya lima abad, tetapi juga lompatan ke dalam penyusunan huruf elektronik, tetap pada dasarnya tidak berubah. Itu dipopulerkan pada 1960-an dengan rilis lembaran Letraset yang berisi bagian-bagian Lorem Ipsum, dan baru-baru ini dengan perangkat lunak penerbitan desktop seperti Aldus PageMaker termasuk versi Lorem Ipsum</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_beranda">MainActivity</string>
+    <string name="title_activity_navigasi">MainActivity</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+    <string name="title1">Welcome</string>
+    <string name="title2">Introduction</string>
+    <string name="title3">My App</string>
+    <string name="deskripsi">Lorem ipsun dolor</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Teks label surat permohonan
+    <string name="surat1">
+        SURAT KETERANGAN PENGANTAR
+    </string>
+    <string name="surat2">
+        SURAT BIODATA PENDUDUK
+    </string>
+    <string name="surat3">
+        SURAT PENGANTAR SURAT KETERANGAN CATATAN KEPOLISIAN
+    </string>
+    <string name="surat4">
+        SURAT KETERANGAN KTP DALAM PROSES
+    </string>
+    <string name="surat5">
+        SURAT KETERANGAN TIDAK MAMPU
+    </string>
+    <string name="surat6">
+        SURAT PENGANTAR IZIN KERAMAIAN
+    </string>
+    <string name="surat7">
+        SURAT KETERANGAN KAWIN/MENIKAH
+    </string>
+    <string name="surat8">
+        SURAT KETERANGAN USAHA
+    </string>
+    <string name="surat9">
+        SURAT KETERANGAN PENGANTAR KTP
+    </string>
+    <string name="surat10">
+        SURAT KETERANGAN BELUM BEKERJA
+    </string>
+    <string name="surat11">
+        SURAT KETERANGAN BELUM PERNAH KAWIN/MENIKAH
+    </string>
+    <string name="surat12">
+        SURAT PERNYATAAN
+    </string>
+    <string name="surat13">
+        SURAT KETERANGAN BERKELAKUAN BAIK
+    </string>
+    <string name="surat14">
+        SURAT KETERANGAN
+    </string>
+
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+
 </resources>
+
+

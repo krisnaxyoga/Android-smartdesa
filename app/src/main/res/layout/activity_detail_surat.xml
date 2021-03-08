@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_primary"
+    tools:context="com.smartdesa.demo.surat.DetailSurat">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtdashboard"
+            android:text="Form Surat / Permohonan"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_putih_bawah_datar">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <GridLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="32dp"
+                        android:drawableStart="@drawable/ic_person"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="304dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="Nama Pemohon"
+                            android:textColor="#767c77"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_nama"
+                            android:layout_width="293dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="xxx"
+                            android:textColor="#767c77"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="32dp"
+                        android:drawableStart="@drawable/ic_credit_card"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="304dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="NIK / No KTP"
+                            android:textColor="#767c77"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_nik"
+                            android:layout_width="293dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="xxx"
+                            android:textColor="#767c77"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="32dp"
+                        android:drawableStart="@drawable/ic_baseline_location_on_24"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="304dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="Alamat"
+                            android:textColor="#767c77"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_alamat"
+                            android:layout_width="293dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="xxx"
+                            android:textColor="#767c77"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="32dp"
+                        android:drawableStart="@drawable/ic_baseline_house_24"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="304dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="Dusun"
+                            android:textColor="#767c77"
+                            android:textSize="16dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rc_dusun"
+                            android:layout_width="293dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" />
+
+                        <TextView
+                            android:id="@+id/tv_dusun"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:visibility="gone"
+                            android:hint="xxx"
+                            android:textColor="#767c77"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/id_surat"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:visibility="gone"
+                            android:hint="xxx"
+                            android:textColor="#767c77"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="32dp"
+                        android:drawableStart="@drawable/ic_baseline_markunread_mailbox_24"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="304dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="Jenis Surat"
+                            android:textColor="#767c77"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_jenis"
+                            android:layout_width="293dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="xxx"
+                            android:textColor="#767c77"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/keperluan"
+                    android:hint="Keperluan"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/berlaku_dari"
+                        android:hint="Berlaku Dari"
+                        android:editable="false"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/berlaku_hingga"
+                        android:hint="Berlaku Hingga"
+                        android:editable="false"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/jenis_acara"
+                        android:hint="Jenis Acara"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/nama_pasangan"
+                        android:hint="Nama Pasangan"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/tahun_kawin"
+                        android:hint="Tahun Kawin"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/lokasi_kawin"
+                        android:hint="Lokasi Kawin"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/pernyataan_sebagai"
+                        android:hint="Pernyataan Sebagai"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/nama_usaha"
+                        android:hint="Nama Usaha"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/jenis_usaha"
+                        android:hint="Jenis Usaha"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                    <EditText
+                        android:id="@+id/alamat_usaha"
+                        android:hint="Alamat Usaha"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"></EditText>
+
+                <Button
+                    android:id="@+id/btn_kirim"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundlogin"
+                    android:text="Kirim Permohonan"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#FFFF" />
+
+
+            </GridLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

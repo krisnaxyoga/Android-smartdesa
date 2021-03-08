@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotFound"
+    android:background="@drawable/background_primary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pembaharuan Fitur Aplikasi"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/gambar"
+                android:layout_width="wrap_content"
+                app:lottie_fileName="working.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_height="300dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Kami sedang menyiapkan pembaharuan fitur aplikasi untuk meningkatkan kualitas pelayanan Smart Desa." />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

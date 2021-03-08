@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9fb"
+    android:orientation="vertical"
+    tools:context="com.smartdesa.demo.homepage.Homepage">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="334dp"
+            android:background="@drawable/background_primary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/btn_search"
+                    android:layout_width="310dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/form_white"
+                    android:hint="Cari Berita..."
+                    android:fontFamily="@font/nunito_bold"
+                    android:editable="false"
+                    android:paddingLeft="20dp"
+                    android:textColor="#767c77"
+                    android:textSize="16dp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    app:lottie_fileName="bell1.json"
+                    app:lottie_autoPlay="true"
+                    android:layout_gravity="center"
+                    app:lottie_loop="true"
+                    android:layout_height="match_parent"/>
+
+<!--                <ImageView-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/icn_login" />-->
+
+            </LinearLayout>
+
+                    <com.synnapps.carouselview.CarouselView
+                        android:id="@+id/carouselView"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        app:fillColor="#FFFFFFFF"
+                        app:pageColor="#00000000"
+                        app:radius="6dp"
+                        android:layout_marginTop="20dp"
+                        app:slideInterval="3000"
+                        app:strokeColor="#FF777777"
+                        app:strokeWidth="1dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:visibility="gone"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginRight="21dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="23dp"
+                                android:fontFamily="@font/dmsans_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="halo"
+                                android:textColor="#cc1c1939"
+                                android:textSize="11sp"
+                                android:layout_marginStart="23dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/dmsans_bold"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="7sp"
+                                android:text="$1,460"
+                                android:textColor="#1c1939"
+                                android:textSize="24sp" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="23dp"
+                                android:fontFamily="@font/dmsans_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="Earned"
+                                android:textColor="#cc1c1939"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/dmsans_bold"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="7sp"
+                                android:text="$2,730"
+                                android:textColor="#1c1939"
+                                android:textSize="24sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="21.5dp"
+                        android:background="#979797" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="23.5dp"
+                        android:layout_marginRight="21dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:lineSpacingExtra="7sp"
+                        android:text="You spent $2,732 on dining out this month.Let’s try to make it lower"
+                        android:textColor="#1c1939"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="27dp"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:lineSpacingExtra="7sp"
+                        android:text="Tell me more"
+                        android:textColor="#7165e3"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_tutorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:visibility="gone"
+                            android:layout_width="60dp"
+                            app:lottie_fileName="yellow1.json"
+                            app:lottie_autoPlay="true"
+                            android:layout_gravity="top"
+                            app:lottie_loop="true"
+                            android:layout_height="40dp"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icn_tutor"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="4sp"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:text="Tutorial"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icn_login"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="4sp"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:text="Login"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:visibility="gone"
+                            android:layout_width="60dp"
+                            app:lottie_fileName="yellow1.json"
+                            app:lottie_autoPlay="true"
+                            android:layout_gravity="top"
+                            app:lottie_loop="true"
+                            android:layout_height="40dp"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icn_registrasi"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="4sp"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:text="Registrasi"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Pengumuman Desa"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="#1c1939" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tampilkan_pengumuman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Tampilkan Semua"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/notpengumuman"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Pengumuman Belum Tersedia"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_pengumuman"
+                        android:layout_marginTop="20dp"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Orti Desa"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="#1c1939" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/lainnya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Tampilkan Semua"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/notberita"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Berita Belum Tersedia"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_berita_terbaru"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+

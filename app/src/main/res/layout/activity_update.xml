@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage.UpdateActivity"
+    android:background="@drawable/background_primary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/gambar"
+                    android:layout_width="wrap_content"
+                    app:lottie_fileName="working.json"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:layout_height="300dp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pembaharuan Versi Aplikasi"
+                android:textSize="21dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="16dp"
+                android:text="Kami sedang menyiapkan pembaharuan versi aplikasi untuk meningkatkan kualitas pelayanan Smart Desa." />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_update"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/download"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        >
+    </ImageButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VERSION 1.1"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="bottom|end"
+            android:fontFamily="@font/lato_light"/>
+
+    </LinearLayout>
+
+</FrameLayout>

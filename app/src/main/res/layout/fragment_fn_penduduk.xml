@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengaduan.FnPenduduk"
+    android:background="@drawable/background_primary">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtdashboard"
+            android:text="PENDUDUK"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="21dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtdashboard2"
+            android:layout_below="@+id/txtdashboard"
+            android:text="Reply Pengaduan"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_putih_bawah_datar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Data Disposisi"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="left"
+                        android:fontFamily="@font/lato_light"/>
+
+                    <TextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Selesai"
+                        android:textSize="18dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="right"
+                        android:fontFamily="@font/lato_light"/>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:visibility="gone"
+                            android:id="@+id/profilphoto"
+                            android:src="@drawable/person"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="70dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+
+                        <GridLayout
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:alignmentMode="alignMargins"
+                            android:columnCount="1"
+                            android:columnOrderPreserved="false"
+                            android:rowCount="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_isitext"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Nomor Pengaduan"
+                                        android:textColor="#767c77"/>
+
+                                    <TextView
+                                        android:id="@+id/no_pengaduan"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="-"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_baseline_house_24"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Nama Dusun"
+                                        android:textColor="#767c77"/>
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/tv_nama_dusun"-->
+<!--                                        android:layout_width="293dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_marginLeft="5dp"-->
+<!--                                        android:layout_marginRight="10dp"-->
+<!--                                        android:hint="-"-->
+<!--                                        android:textColor="#767c77"-->
+<!--                                        android:textSize="16dp"-->
+<!--                                        android:textStyle="bold" />-->
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rc_dusun"
+                                        android:layout_width="293dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_credit_card"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="NIK Pengadu"
+                                        android:textColor="#767c77"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_nik_pengadu"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="-"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_person"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Nama Pengadu"
+                                        android:textColor="#767c77"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_nama_pengadu"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="-"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_isitext"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Kategori Pengaduan"
+                                        android:textColor="#767c77" />
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/tv_kategori"-->
+<!--                                        android:layout_width="293dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_marginLeft="5dp"-->
+<!--                                        android:layout_marginRight="10dp"-->
+<!--                                        android:hint="-"-->
+<!--                                        android:textColor="#767c77"-->
+<!--                                        android:textSize="16dp"-->
+<!--                                        android:textStyle="bold" />-->
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rc_kat"
+                                        android:layout_width="293dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_history_black"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Dikirim tanggal"
+                                        android:textColor="#767c77"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_created_at"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="-"
+                                        android:textColor="#767c77"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:layout_height="32dp"
+                                    android:drawableStart="@drawable/ic_orti"
+                                    android:gravity="left"
+                                    android:paddingLeft="3dp"
+                                    android:textColor="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="304dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="225dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:hint="Isi Pengaduan"
+                                        android:textColor="#767c77"/>
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/tv_pengaduan"-->
+<!--                                        android:layout_width="293dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_marginLeft="5dp"-->
+<!--                                        android:layout_marginRight="10dp"-->
+<!--                                        android:hint="-"-->
+<!--                                        android:textColor="#767c77"-->
+<!--                                        android:textSize="16dp"-->
+<!--                                        android:textStyle="bold" />-->
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rc_con"
+                                        android:layout_width="293dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
